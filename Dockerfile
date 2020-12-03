@@ -1,5 +1,5 @@
 FROM node:12-alpine as build
-ARG APP_DIR=rs-cart-api
+ARG BUILD_DIR=rs-cart-api
 RUN mkdir -p ${BUILD_DIR}
 # Copy project files
 COPY . /${BUILD_DIR}
