@@ -19,4 +19,5 @@ COPY --from=build /rs-cart-api/package*.json /${PROD_DIR}/
 WORKDIR /${PROD_DIR}
 # Install prod dependencies
 RUN npm install --production
+EXPOSE 4000
 CMD ["node", "dist/main"]
